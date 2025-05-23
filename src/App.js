@@ -19,3 +19,4 @@ console.log(cadastrado)
 }
 
 export default App;
+

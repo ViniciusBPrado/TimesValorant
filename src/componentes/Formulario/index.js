@@ -23,6 +23,7 @@ const Formulario = (props) => {
     const [times, setTimes] = useState()
 
 
+
     const aoSalvar = (evento) => {
         evento.preventDefault()
         props.aoSerCadastrado({
@@ -38,7 +39,7 @@ const Formulario = (props) => {
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <h2>Insira os dados para adicionar o player.</h2>
-      <CampoTexto 
+                <CampoTexto 
       obrigatorio={true} 
       abel="Nome" 
       placeholder = "Digite seu nome"
@@ -76,7 +77,7 @@ const Formulario = (props) => {
       valor={times}
       aoAlterado={valor => setTimes(valor)}
       />
-
+      
       <Botao>
         Criar Card
       </Botao>
@@ -85,5 +86,6 @@ const Formulario = (props) => {
     )
 
 }
+// teste
 
 export default Formulario
