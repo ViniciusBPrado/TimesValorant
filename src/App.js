@@ -47,7 +47,6 @@ const equipes = [
 const[cadastrados, setCadastrados] = useState([])
 
 const aoNovoCadastradoAdicionado = (cadastrado) => {
-console.log(cadastrado)
 setCadastrados([...cadastrados, cadastrado])
 }
 
