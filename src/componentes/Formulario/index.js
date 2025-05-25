@@ -5,22 +5,11 @@ import Botao from '../Botao'
 import { useState } from 'react'
 
 const Formulario = (props) => {
-
-    const equipes = [
-        'MIBR',
-        'LOUD',
-        '2G',
-        'NRG',
-        'G2',
-        'C9',
-        'LEVIATÃ'
-    ]
-
-    const [nome, setNome] = useState()
-    const [cargo, setCargo] = useState()
-    const [imagem, setImagem] = useState()
-    const [posicao, setPosicao] = useState()
-    const [times, setTimes] = useState()
+    const [nome, setNome] = useState('')
+    const [cargo, setCargo] = useState('')
+    const [imagem, setImagem] = useState('')
+    const [posicao, setPosicao] = useState('')
+    const [equipe, setTimes] = useState('')
 
 
 
@@ -31,9 +20,15 @@ const Formulario = (props) => {
             cargo,
             imagem,
             posicao,
-            times
+            equipe
         })
-    }
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setPosicao('')
+    setTimes('')
+   }
+
 
     return(
         <section className="formulario">
@@ -41,7 +36,7 @@ const Formulario = (props) => {
                 <h2>Insira os dados para adicionar o player.</h2>
                 <CampoTexto 
       obrigatorio={true} 
-      abel="Nome" 
+      label="Nome" 
       placeholder = "Digite seu nome"
       valor={nome}
       aoAlterado={valor => setNome(valor)}
@@ -73,8 +68,8 @@ const Formulario = (props) => {
       <ListaSuspensa 
       obrigatorio={true} 
       label='Times' 
-      itens={equipes}
-      valor={times}
+      itens={props.equipes}
+      valor={equipe}
       aoAlterado={valor => setTimes(valor)}
       />
       

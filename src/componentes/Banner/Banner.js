@@ -1,10 +1,11 @@
-import './Banner.css'
+import './Banner.css';
 
-export const Banner = () => {
-    // JSX
+function Banner() {
     return (
-        <header className="banner">
-            <img src="/imagens/banner.png" alt="O banner principal da página do Organo"/>
-        </header>
-    )
+        <div className="banner">
+            <img src="/imagens/banner.png" alt="Banner do site" />
+        </div>
+    );
 }
+
+export default Banner;
