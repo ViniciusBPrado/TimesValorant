@@ -11,6 +11,7 @@ const css = {backgroundColor: props.corSecundaria}
             <h3 style={{borderBlockColor: props.corPrimaria}}>{props.nome}</h3>
         <div className='cadastrados'> 
              {props.cadastrados.map((cadastrado, index) => <Cadastrado 
+             corDeFundo={props.corPrimaria}
              key={cadastrado.nome + index} 
              nome={cadastrado.nome} 
              cargo={cadastrado.cargo} 
