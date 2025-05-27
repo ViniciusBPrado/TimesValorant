@@ -33,7 +33,7 @@ const Formulario = (props) => {
     return(
         <section className="formulario">
             <form onSubmit={aoSalvar}>
-                <h2>Insira os dados para adicionar o player.</h2>
+                <h2>Insira os dados dos integrantes dos times</h2>
                 <CampoTexto 
       obrigatorio={true} 
       label="Nome" 
