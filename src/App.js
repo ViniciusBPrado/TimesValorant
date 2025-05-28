@@ -67,3 +67,4 @@ setCadastrados([...cadastrados, cadastrado])
 }
 
 export default App;
+
