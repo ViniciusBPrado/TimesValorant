@@ -7,5 +7,5 @@ function Banner() {
         </div>
     );
 }
-
+//teste
 export default Banner;

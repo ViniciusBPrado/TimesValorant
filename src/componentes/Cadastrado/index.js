@@ -7,7 +7,7 @@ const Cadastrado = ({ nome, imagem, cargo, posicao, corDeFundo }) => {
                 <img src={imagem} alt={nome} />
             </div>
             <div className='rodape'>
-                <h4>{nome}</h4>
+                <h4>{nome}</h4> 
                 <h5>{cargo}</h5>
                 <h5>{posicao}</h5>
             </div>
